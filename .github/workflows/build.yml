@@ -1,0 +1,35 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code holen
+        uses: actions/checkout@v4
+
+      - name: Chrome, Firefox und Userscript bauen
+        shell: pwsh
+        run: ./build.ps1
+
+      - name: Build-Dateien hochladen
+        uses: actions/upload-artifact@v4
+        with:
+          name: paketkarte-entsperren
+          path: dist/*
+
+      - name: Release veröffentlichen
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true

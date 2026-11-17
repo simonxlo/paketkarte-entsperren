@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Paketkarte entsperren">
+  <defs>
+    <clipPath id="map"><rect x="800" y="40" width="416" height="240" rx="10"/></clipPath>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1279" height="319" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+
+  <!-- Logo -->
+  <g transform="translate(64 64)">
+    <rect width="56" height="56" rx="12" fill="#2563eb"/>
+    <path d="M28 10c-7.2 0-12 5.3-12 11.6 0 7.6 7.7 13.4 12 24.4 4.3-11 12-16.8 12-24.4C40 15.3 35.2 10 28 10z" fill="#ffffff"/>
+    <circle cx="28" cy="21.5" r="4.6" fill="#2563eb"/>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+    <text x="62" y="180" font-size="52" font-weight="600" fill="#1f2328" letter-spacing="-0.5">Paketkarte entsperren</text>
+    <text x="64" y="222" font-size="22" fill="#59636e">Die DHL-Live-Karte frei verschieben und zoomen.</text>
+
+    <!-- Topics -->
+    <g font-size="14" font-weight="500" fill="#0969da">
+      <rect x="64" y="246" width="146" height="28" rx="14" fill="#ddf4ff"/>
+      <text x="137" y="265" text-anchor="middle">chrome-extension</text>
+      <rect x="218" y="246" width="118" height="28" rx="14" fill="#ddf4ff"/>
+      <text x="277" y="265" text-anchor="middle">firefox-addon</text>
+      <rect x="344" y="246" width="98" height="28" rx="14" fill="#ddf4ff"/>
+      <text x="393" y="265" text-anchor="middle">userscript</text>
+      <rect x="450" y="246" width="86" height="28" rx="14" fill="#ddf4ff"/>
+      <text x="493" y="265" text-anchor="middle">maplibre</text>
+    </g>
+  </g>
+
+  <!-- Karte -->
+  <g clip-path="url(#map)">
+    <rect x="800" y="40" width="416" height="240" fill="#f6f8fa"/>
+    <!-- Grünflächen -->
+    <g fill="#dafbe1">
+      <rect x="812" y="54" width="70" height="44" rx="4"/>
+      <rect x="1120" y="200" width="84" height="66" rx="4"/>
+      <rect x="1010" y="60" width="48" height="36" rx="4"/>
+      <rect x="836" y="214" width="56" height="50" rx="4"/>
+    </g>
+    <!-- Fluss -->
+    <path d="M780 150 C 860 130, 920 180, 1000 168 S 1140 110, 1240 128" fill="none" stroke="#cfe2ff" stroke-width="16" stroke-linecap="round"/>
+    <!-- Straßen -->
+    <g fill="none" stroke="#d0d7de" stroke-linecap="round">
+      <path d="M800 112 H 1216" stroke-width="7"/>
+      <path d="M940 40 V 280" stroke-width="7"/>
+      <path d="M1090 40 L 1060 280" stroke-width="5"/>
+      <path d="M800 236 H 1216" stroke-width="4"/>
+      <path d="M870 40 L 900 280" stroke-width="3"/>
+      <path d="M1160 40 V 280" stroke-width="3"/>
+    </g>
+    <!-- Route -->
+    <path d="M900 236 H 940 V 112 H 1072" fill="none" stroke="#0969da" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 10"/>
+    <!-- Fahrzeug -->
+    <circle cx="900" cy="236" r="13" fill="#1a7f37" stroke="#ffffff" stroke-width="3"/>
+    <!-- Ziel -->
+    <g transform="translate(1072 112)">
+      <path d="M0 0c-3-8-14-13-14-24 0-8 6-14 14-14s14 6 14 14c0 11-11 16-14 24z" fill="#0969da" stroke="#ffffff" stroke-width="2"/>
+      <circle cy="-24" r="5" fill="#ffffff"/>
+    </g>
+    <!-- Zoom-Buttons -->
+    <g transform="translate(1180 186)">
+      <rect width="26" height="52" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+      <path d="M8 13h10M13 8v10M8 39h10" stroke="#1f2328" stroke-width="2" stroke-linecap="round"/>
+      <path d="M2 26h22" stroke="#d0d7de"/>
+    </g>
+    <!-- Ziehen -->
+    <path d="M1000 210 C 1020 196, 1040 192, 1066 194" fill="none" stroke="#59636e" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6"/>
+    <g transform="translate(1070 188)">
+      <path d="M0 0v22l6-5 4 9 4-2-4-9h8z" fill="#ffffff" stroke="#1f2328" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <rect x="800.5" y="40.5" width="415" height="239" rx="10" fill="none" stroke="#d0d7de"/>
+</svg>

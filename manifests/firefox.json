@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Paketkarte entsperren (inoffiziell)",
+  "short_name": "Paketkarte",
+  "version": "1.0.0",
+  "description": "Macht die Live-Zustellkarte der DHL-Sendungsverfolgung verschieb- und zoombar. Inoffiziell, nicht mit DHL verbunden.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.dhl.de/*"],
+      "js": ["unlock.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "paketkarte-entsperren@inoffiziell",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

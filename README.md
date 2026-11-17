@@ -9,12 +9,12 @@
 
 Browser-Erweiterung, die die Live-Zustellkarte der DHL-Sendungsverfolgung verschieb- und zoombar macht.
 
-[![Build](https://github.com/howlongcanthisevenbewowitsamazing/paketkarte-entsperren/actions/workflows/build.yml/badge.svg)](https://github.com/howlongcanthisevenbewowitsamazing/paketkarte-entsperren/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/howlongcanthisevenbewowitsamazing/paketkarte-entsperren)](https://github.com/howlongcanthisevenbewowitsamazing/paketkarte-entsperren/releases/latest)
+[![Build](https://github.com/simonxlo/paketkarte-entsperren/actions/workflows/build.yml/badge.svg)](https://github.com/simonxlo/paketkarte-entsperren/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/v/release/simonxlo/paketkarte-entsperren)](https://github.com/simonxlo/paketkarte-entsperren/releases/latest)
 [![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-blue)](LICENSE)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-informational)
 
-[Installation](#installation) · [Funktionsweise](#funktionsweise) · [Entwicklung](#entwicklung) · [Problem melden](https://github.com/howlongcanthisevenbewowitsamazing/paketkarte-entsperren/issues/new/choose)
+[Installation](#installation) · [Funktionsweise](#funktionsweise) · [Entwicklung](#entwicklung) · [Problem melden](https://github.com/simonxlo/paketkarte-entsperren/issues/new/choose)
 
 </div>
 
@@ -34,7 +34,7 @@ In der Live-Zustellung lässt sich die Karte nur über die +/− Buttons zoomen.
 
 | Browser | Weg |
 | --- | --- |
-| Chrome, Edge, Vivaldi, Brave | [Chrome Web Store](#) · oder ZIP aus den [Releases](https://github.com/howlongcanthisevenbewowitsamazing/paketkarte-entsperren/releases/latest) |
+| Chrome, Edge, Vivaldi, Brave | [Chrome Web Store](#) · oder ZIP aus den [Releases](https://github.com/simonxlo/paketkarte-entsperren/releases/latest) |
 | Firefox (ab 128) | [addons.mozilla.org](#) |
 | Jeder Browser mit Tampermonkey/Violentmonkey | [Userscript auf Greasy Fork](#) |
 
@@ -42,7 +42,7 @@ In der Live-Zustellung lässt sich die Karte nur über die +/− Buttons zoomen.
 <summary>Manuell installieren (ohne Store)</summary>
 
 **Chrome / Edge / Vivaldi / Brave**
-1. `paketkarte-entsperren-chrome-*.zip` aus den [Releases](https://github.com/howlongcanthisevenbewowitsamazing/paketkarte-entsperren/releases/latest) laden und entpacken.
+1. `paketkarte-entsperren-chrome-*.zip` aus den [Releases](https://github.com/simonxlo/paketkarte-entsperren/releases/latest) laden und entpacken.
 2. `chrome://extensions` öffnen, **Entwicklermodus** einschalten.
 3. **Entpackte Erweiterung laden** → entpackten Ordner wählen.
 
@@ -74,7 +74,7 @@ sequenceDiagram
 Der gesamte Code steht in [`src/unlock.js`](src/unlock.js) (gut 40 Zeilen).
 
 > [!NOTE]
-> Ändert DHL die Seite oder die MapLibre-Version, kann die Erweiterung aufhören zu funktionieren. In dem Fall bitte ein [Issue](https://github.com/howlongcanthisevenbewowitsamazing/paketkarte-entsperren/issues/new/choose) anlegen.
+> Ändert DHL die Seite oder die MapLibre-Version, kann die Erweiterung aufhören zu funktionieren. In dem Fall bitte ein [Issue](https://github.com/simonxlo/paketkarte-entsperren/issues/new/choose) anlegen.
 
 ## Datenschutz
 

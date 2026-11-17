@@ -1,0 +1,32 @@
+name: 🗺️ Karte lässt sich nicht bewegen
+description: Die Erweiterung oder das Userscript funktioniert nicht (mehr).
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke fürs Melden! **Bitte keine Sendungsnummern, Adressen oder Screenshots mit persönlichen Daten posten.**
+  - type: dropdown
+    id: variante
+    attributes:
+      label: Welche Variante nutzt du?
+      options:
+        - Chrome-Erweiterung (auch Edge, Vivaldi, Brave)
+        - Firefox-Add-on
+        - Userscript (Tampermonkey / Violentmonkey)
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser und Version
+      placeholder: z. B. Vivaldi 7.6, Firefox 140
+    validations:
+      required: true
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Was passiert?
+      description: Lässt sich die Karte gar nicht bewegen, nur manchmal, oder erscheint eine Fehlermeldung (F12 → Konsole)?
+    validations:
+      required: true
